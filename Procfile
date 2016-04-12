@@ -1,2 +1,2 @@
-release: . release-fail.sh
+release: . release.sh
 web: gunicorn gettingstarted.wsgi --log-file
