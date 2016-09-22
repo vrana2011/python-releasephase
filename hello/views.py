@@ -9,7 +9,9 @@ from django.shortcuts import render
 from django.http import HttpResponse
 
 from .models import Greeting
-pydevd.settrace('localhost', port=9090, stdoutToServer=True, stderrToServer=True)
+
+hPort = os.environ.get('PORT')
+pydevd.settrace('0.0.0.0', post=hPort, stdoutToServer=True, stderrToServer=True)
 
 # Create your views here.
 def index(request):
