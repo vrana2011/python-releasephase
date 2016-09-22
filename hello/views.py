@@ -11,7 +11,7 @@ from django.http import HttpResponse
 from .models import Greeting
 
 hPort = os.environ.get('PORT')
-pydevd.settrace('0.0.0.0', post=hPort, stdoutToServer=True, stderrToServer=True)
+pydevd.settrace('0.0.0.0', port=hPort, stdoutToServer=True, stderrToServer=True)
 
 # Create your views here.
 def index(request):
