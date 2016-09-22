@@ -450,7 +450,7 @@
     <configuration default="false" name="Heroku" type="PyRemoteDebugConfigurationType" factoryName="Python Remote Debug">
       <module name="" />
       <option name="PORT" value="9090" />
-      <option name="HOST" value="localhost" />
+      <option name="HOST" value="0" />
       <PathMappingSettings>
         <option name="pathMappings">
           <list />
@@ -515,7 +515,14 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="3" />
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/hello/views.py</url>
+          <line>21</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="4" />
     </breakpoint-manager>
     <watches-manager />
   </component>
