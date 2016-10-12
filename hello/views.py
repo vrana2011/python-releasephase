@@ -1,16 +1,16 @@
 import requests
 import sys
 
-#sys.path.append('pycharm-debug.egg')
+sys.path.append('pycharm-debug.egg')
 
-#import pydevd
+import pydevd
 import os
 from django.shortcuts import render
 from django.http import HttpResponse
 
 from .models import Greeting
 
-#pydevd.settrace('locahost', port='9090', stdoutToServer=True, stderrToServer=True)
+pydevd.settrace('locahost', port='9090', stdoutToServer=True, stderrToServer=True)
 
 # Create your views here.
 def index(request):
