@@ -1,1 +1,1 @@
-sleep 3m 
+sleep 10s 
